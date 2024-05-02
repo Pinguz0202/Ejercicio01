@@ -1,53 +1,187 @@
+body{
+    color: #6E6E6E;
+}
+
+/* Estilo para la sección de inicio */
+.seccion_inicio {
+    background-color: #D9D9D9;
+    height: 100vh;
+    padding: 0 100px;
+}
+
+/* Estilo para la cabecera */
 .cabecera {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    align-items: end;
 }
 
-.logo { /*Alinear al lado del logo*/
+/* Estilo para el logotipo */
+.logo {
     display: flex;
-    align-items: center;
+    align-items: end;
+    color: #00B2E3;
 }
 
-.logo img { /* Imagen */
-    width: 50px;
-    margin-right: 10px;
+.logo strong{
+    color: #6E6E6E;
+
 }
 
+/* Estilo para el menú */
 .menu ul {
-    list-style: none;
     display: flex;
+    gap: 20px;
+    list-style-type: none;
 }
 
-.menu li {
-    margin-right: 20px;
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.inicio {
+
+.menu a:hover {
+    background-color: #dcdcdc;
+    transition: background-color 0.3s ease; 
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Estilo para la sección de inicio */
+.inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+   }
+
+.inicio h1 {
+    color: #6c757d;
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.inicio h2 {
+    color: #6c757d;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.inicio h2 span {
+    color: #007bff;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+/* Estilo para los botones */
+.botones{
+    display: flex;
+    gap: 50px;
+}
+
+.botones button{
+    background-color: #00B2E3;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Estilo Cursos*/
+.seccion_cursos{
+    padding: 100px;
+}
+
+.seccion_cursos h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    align-items: end;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #00B2E3;
+    border-radius: 20px;
+}
+
+.cards div:nth-child(1){
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(img/Desarollo\ Aplicaciones\ Multiplatadorma.png);
+}
+
+.cards div:nth-child(2){
+    grid-row: span 2;
+    background-image: url(img/Integracion\ Social.png);
+}
+
+.cards div:nth-child(3){
+    grid-column: span 2;
+    background-image: url(img/TÉCNICO\ SUPERIOR\ EN\ ADMINISTRACIÓN\ Y\ FINANZAS.png);
+}
+
+.cards div:nth-child(4){
+    background-image: url(img/TÉCNICO\ SUPERIOR\ EN\ EDUCACIÓN\ INFANTIL.png);
+}
+
+.cards div:nth-child(5){
+    background-image: url(img/Acondicionamiento\ fisico.png);
+}
+
+.cards div:nth-child(6){
+    grid-column: span 2;
+    background-image: url(img/TÉCNICO\ SUPERIOR\ EN\ Cocina.png);
+}
+
+/* Estilo para el Pie */
+.footer {
+    background-color:  #D9D9D9;
+    color: black;
+    padding: 20px;
     text-align: center;
-    padding: 50px;
-    margin-left: auto;
-    margin-right: 20px;
-    max-width: calc(100% - 40px);
+    width: 100%;
+
 }
 
-.inicio h1, .inicio h2 {
-    display: inline-block;
-    margin-right: -20px;
+.botonesPie {
+    margin-bottom: 20px;
 }
 
-
-.botones {
-    margin-top: 20px;
-}
-
-.dudas,
-.info {
-    background-color: #007bff;
-    color: #fff;
+.botonesPie button {
+    background-color: transparent;
     border: none;
-    padding: 10px 20px;
-    margin-right: 10px;
+    color: black;
+    padding: 5px 10px;
+    margin: 0 5px;
     cursor: pointer;
+}
+
+.menu a:hover {
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+.botonesPie button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Copyright {
+    font-size: 12px;
 }
